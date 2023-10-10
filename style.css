@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@200;300;400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Taviraj', serif;
+}
+
+.container{
+    width: 100%;
+    padding: 0 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+
+/* ========Navbar styling======= */
+
+#navbar{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+  
+}
+
+
+.nav-item{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item ul li{
+    list-style: none;
+}
+
+.nav-item ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.748);
+}
+
+.nav-item ul li a:hover{
+    border-bottom: 2px solid gray;
+}
+
+.nav-item button{
+    padding: 0 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.nav-item form select{
+    border: none;
+    outline: none;
+}
+
+
+/* ============Home styling======= */
+
+#home{
+    display: flex;
+    margin-top: 130px; 
+}
+
+.home-detailes{
+    width: 50%;
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.home-detailes h3{
+    font-size: 30px;
+}
+
+.home-img img{
+    width: 500px;
+}
+
+
+/* ==========Services styling========= */
+
+#services{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.srvices-detailes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.srvices-detailes .ser{
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.srvices-detailes .ser .img{
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.srvices-detailes .ser .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* ========Destination styling======== */
+
+
+#destination{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.destination-heading{
+    margin-bottom: 50px;
+}
+
+
+.destination-detailes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.destination-detailes .detailes{
+    width: 33%;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.destination-detailes .detailes img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.destination-detailes .detailes .rome,
+.destination-detailes .detailes .london,
+.destination-detailes .detailes .europe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+/* =============Booking Section========== */
+
+#booking{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#booking .left,
+#booking .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.left .detaile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.left .detaile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+#booking .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.right .right-detaile{
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#booking .right img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* ==========Feedbacks Section============  */
+
+#feedback{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#feedback .left,
+#feedback .right{
+    width: 50%;
+}
+
+#feedback .right .right-detaile{
+    margin: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#feedback .right .right-detaile img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#feedback .right .right-detaile h4{
+    margin-top: 20px;
+}
+
+
+
+/* ==========Footer section=========== */
+
+
+.footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer .footer5 .icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer .footer5 .icons i{
+   font-size: 30px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 50%;
+}
+
+.footer5 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.footer5 .button .btn1,
+.footer5 .button .btn2{
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+
+.footer5 .button .btn1 i,
+.footer5 .button .btn2 i{
+    font-size: 20px;
+}
+
+.button .btn1 p,
+.button .btn2 p{
+    font-size: 7px;
+}
+
+.footer6{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
